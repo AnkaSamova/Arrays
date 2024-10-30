@@ -8,7 +8,7 @@ public class _Main {
     public static void main(String[] args) {
         int[] arr = new int[10];
         Random random = new Random();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(201) - 100;
             System.out.print(arr[i] + " ");
         }

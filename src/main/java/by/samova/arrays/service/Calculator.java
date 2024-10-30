@@ -3,7 +3,7 @@ package by.samova.arrays.service;
 public class Calculator {
     public static void evenNumbers(int[] arr) {
         int sumEven = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 == 0) {
                 sumEven++;
             }
@@ -13,7 +13,7 @@ public class Calculator {
 
     public static void oddNumbers(int[] arr) {
         int sumOdd = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 != 0) {
                 sumOdd++;
             }
@@ -23,7 +23,7 @@ public class Calculator {
 
     public static void primeNumbers(int[] arr) {
         int sumPrime = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 2) {
                 int d = 2;
                 while (d < Math.sqrt(arr[i]) && arr[i] % d != 0) {
@@ -41,7 +41,7 @@ public class Calculator {
 
     public static void sumAll(int[] arr) {
         int sum = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
         System.out.println("Сумма всех чисел в массиве: " + sum);
@@ -50,10 +50,10 @@ public class Calculator {
     public static void difference(int[] arr) {
         int evenSum = 0;
         int oddSum = 0;
-        for (int i = 0; i < 10; i = i + 2) {
+        for (int i = 0; i < arr.length; i = i + 2) {
             evenSum += arr[i];
         }
-        for (int i = 1; i < 10; i = i + 2) {
+        for (int i = 1; i < arr.length; i = i + 2) {
             oddSum += arr[i];
         }
         int diff = evenSum - oddSum;
@@ -62,7 +62,7 @@ public class Calculator {
 
     public static void zero(int[] arr) {
         int sumZero = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 0) {
                 sumZero++;
             }
