@@ -1,6 +1,7 @@
 package by.samova.arrays._main;
 
 import by.samova.arrays.service.Calculator;
+import by.samova.arrays.service.Sorting;
 
 import java.util.Random;
 
@@ -19,5 +20,6 @@ public class _Main {
         Calculator.sumAll(arr);
         Calculator.difference(arr);
         Calculator.zero(arr);
+        Sorting.sort(arr);
     }
 }
