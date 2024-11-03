@@ -13,7 +13,7 @@ public class _Main {
             arr[i] = random.nextInt(201) - 100;
             System.out.print(arr[i] + " ");
         }
-        System.out.println(" ");
+        System.out.println();
         Calculator.evenNumbers(arr);
         Calculator.oddNumbers(arr);
         Calculator.primeNumbers(arr);
