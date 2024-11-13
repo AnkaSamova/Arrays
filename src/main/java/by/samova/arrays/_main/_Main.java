@@ -19,7 +19,7 @@ public class _Main {
         Calculator.primeNumbers(arr);
         Calculator.sumAll(arr);
         Calculator.difference(arr);
-        Calculator.zero(arr);
+        Calculator.zeroNumbers(arr);
         Sorting.sort(arr);
     }
 }
