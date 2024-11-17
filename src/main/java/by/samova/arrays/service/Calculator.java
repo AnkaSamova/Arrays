@@ -24,12 +24,13 @@ public class Calculator {
     public static void primeNumbers(int[] arr) {
         int primeNum = 0;
         for (int i = 0; i < arr.length; i++) {
+            double maxDiv = Math.sqrt(arr[i]);
             if (arr[i] > 2) {
                 int d = 2;
-                while (d < Math.sqrt(arr[i]) && arr[i] % d != 0) {
+                while (d < maxDiv && arr[i] % d != 0) {
                     d++;
                 }
-                if (d > Math.sqrt(arr[i])) {
+                if (d > maxDiv) {
                     primeNum++;
                 }
             } else if (arr[i] == 2) {
